@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="description" name="description">
+    <meta name="google" content="notranslate" />
+    <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/logo.png">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <title>About KELOMPOK AWAN</title>
+
+    <link href="./static/design.css" rel="stylesheet">
+    <style>
+        .team-member {
+            margin-bottom: 30px;
+        }
+        .black-image-project-hover {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        .black-image-project-hover img {
+            transition: all 0.3s ease;
+            width: 100%;
+            height: auto;
+        }
+        .black-image-project-hover:hover img {
+            transform: scale(1.1);
+        }
+        .black-image-project-hover::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .black-image-project-hover:hover::before {
+            opacity: 1;
+        }
+        .card-container {
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 4px;
+        }
+        .carousel-control {
+            background-image: none;
+            color: #000;
+            font-size: 24px;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .carousel-control:hover {
+            color: #000;
+        }
+        .carousel-control.left {
+            left: -30px;
+        }
+        .carousel-control.right {
+            right: -30px;
+        }
+    </style>
+</head>
+
+<body class="">
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+    
+    <!-- Header -->
+    <header>
+        <nav class="navbar  navbar-fixed-top navbar-default">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="/" title="">01 : Home</a></li>
+                        <li><a href="./works.html" title="">02 : Course</a></li>
+                        <li><a href="./about.html" title="">03 : About us</a></li>
+                        <li><a href="./contact.html" title="">04 : Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="section-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+                    <div class="text-center">
+                        <h1 class="h2">01 : About Us</h1>
+                        <p>We are a team of passionate students dedicated to exploring and mastering cloud computing technologies.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide projects-carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-6 team-member">
+                                        <a href="#" class="black-image-project-hover">
+                                            <<img src="./static/assets/images/member3.jpg" alt="Team Member 3" class="img-responsive">
+                                        </a>
+                                        <div class="card-container">
+                                            <h3>Janeri Amanda</h3>
+                                            <p><strong>NIM:</strong> 22.83.0913</p>
+                                            <p><strong>Education:</strong> teknik komputer amikom</p>
+                                            <p>Saya suka langit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 team-member">
+                                        <a href="#" class="black-image-project-hover">
+                                            <img src="./static/assets/images/member2.jpg" alt="Team Member 2" class="img-responsive">
+                                        </a>
+                                        <div class="card-container">
+                                            <h3>Natasha Putri Rondonuwu</h3>
+                                            <p><strong>NIM:</strong> 22.83.0943</p>
+                                            <p><strong>Education:</strong> Teknik komputer</p>
+                                            <p>Less is more</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-6 team-member">
+                                        <a href="#" class="black-image-project-hover">
+                                            <img src="./static/assets/images/member1.jpg" alt="Team Member 1" class="img-responsive">
+                                        </a>
+                                        <div class="card-container">
+                                            <h3>Labib aziz maalikulhaq</h3>
+                                            <p><strong>NIM:</strong> 22.83.0921</p>
+                                            <p><strong>Education:</strong> Teknik komputer amikom</p>
+                                            <p>Saya suka kemah.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 team-member">
+                                        <a href="#" class="black-image-project-hover">
+                                            <img src="./static/assets/images/member4.jpg" alt="Team Member 4" class="img-responsive">
+                                        </a>
+                                        <div class="card-container">
+                                            <h3>Galih nur massaid</h3>
+                                            <p><strong>NIM:</strong> 22.83.0918</p>
+                                            <p><strong>Education:</strong> Teknik komputer</p>
+                                            <p>Never stop exploring.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-container text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>© KELOMPOK AWAN | Website dibuat oleh <a href="https://www.youtube.com/results?search_query=cloud+computing" target="_blank" title="Create website with free html template">kelompok awan</a>/<a href="https://youtube.com/codebreakerstech" target="_blank" title="Beautiful Free Images">kelompok awan</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            navActivePage();
+        });
+    </script>
+    <script type="text/javascript" src="./static/main.js"></script>
+</body>
+
+</html>
